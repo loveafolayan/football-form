@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Registration Form</title>
+    </head>
+    <body>
+      <h1 id="title">Technique Development Form</h1>
+      <p id="description">Fill the form on what areas you want to improve on</p>
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+      <label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+      <label id="email-label" for="email">Email<input id="email" type="email" name=""email placeholder="Enter your Email" required/></label> 
+      <label id="number-label" for="age">Age<input id="number" type="number" name="age" min="10" max="99" placeholder="Age" /></label>   
+      <label id="number-label" for="height">Height(cm)<input id="number" type="number" name="age" min="50" max="500" placeholder="Height" /></label>   
+      </fieldset>
+      <fieldset>
+     <p><label for="dropdown" >Which is your dominant foot?</p>
+      <select id="dropdown" name="dropdown" >
+         <option disabled selected>Select dominant foot</option>
+        <option value="1">Right</option>
+        <option value="2">Left</option>
+        <option value="3">Ambidextrous</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      <p> Position</p>
+        <label for="goalkeeper"><input id="goalkeeper" value="goalkeeper" name="recommend" class="inline" type="radio" id >Goalkeeper</label>
+        <label for="defender"><input id="defender" value="defender" name="recommend" class="inline" type="radio">Defender</label>
+        <label for="midfielder"><input id="midfielder" value="midfielder" name="recommend" class="inline" type="radio">Midfielder</label>
+        <label for="attacker"><input id="attacker" value="attacker" name="recommend" class="inline" type="radio">Attacker</label>
+        </fieldset>
+        <fieldset>
+     <p> <label for="dropdown" >Which of these characteristics best describes you?</p>
+      <select id="dropdown" name="dropdown" >
+         <option disabled selected>Select one</option>
+        <option value="1">Prolific Scorer</option>
+        <option value="2">Pacey Winger</option>
+        <option value="3">Dribbler</option>
+        <option value="4">Pinpoint Passer</option>
+        <option value="5">Playmaker</option>
+        <option value="6">Box to Box</option>
+        <option value="7">Anchor</option>
+        <option value="8">Overlaping Fullback</option>
+        <option value="9">Destroyer</option>
+        <option value="10">Sweeper</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <p> What would you like to see improved? (Check all that apply)</p>
+        <label for="passing"><input id="passing" value="passing" name="passing" class="inline" type="checkbox" id >Passing</label>
+        <label for="shooting"><input id="shooting" value="shooting" name="shooting" class="inline" type="checkbox">Shooting</label>
+        <label for="dribbling"><input id="dribbling" value="dribbling" name="dribbling" class="inline" type="checkbox">Dribbling</label>
+        <label for="awareness"><input id="awareness" value="awareness" name="awareness" class="inline" type="checkbox">Awareness</label>
+        <label for="composure"><input id="composure" value="composure" name="composure" class="inline" type="checkbox">Composure</label>
+        <label for="finishing"><input id="finishing" value="finishing" name="finishing" class="inline" type="checkbox">Finishing</label>
+        <label for="pace"><input id="pace" value="pace" name="pace" class="inline" type="checkbox">Pace</label>
+        <label for="curling"><input id="curling" value="curling" name="curling" class="inline" type="checkbox">Curl</label>
+        <label for="balance"><input id="balance" value="balance" name="balance" class="inline" type="checkbox">Balance</label>
+        <label for="penalty"><input id="penalty" value="penalty" name="penalty" class="inline" type="checkbox">Penalty</label>
+        <label for="volley"><input id="volley" value="volley" name="volley" class="inline" type="checkbox">Volley</label>
+        <label for="ball-control"><input id="ball-control" value="ball-control" name="ball-control" class="inline" type="checkbox">Ball Control</label>
+        <label for="freekick"><input id="freekick" value="freekick" name="freekick" class="inline" type="checkbox">Freekick</label>
+        <label for="heading"><input id="heading" value="heading" name="heading" class="inline" type="checkbox">Heading</label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Input players name with similar playing style?
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter name here..."></textarea>
+        </label>
+        </fieldset>
+      <input id="submit" type="submit" value="Submit">
+      </form>
+    </body>
+    </html>
